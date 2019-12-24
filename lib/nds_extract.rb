@@ -21,7 +21,7 @@ def directors_totals(nds)
       director_total += nds[director_count][:movies][movie_count][:worldwide_gross]
     end
     # save it to its own hash in the result
-    result
+    result[nds[director_count][:]]
     director_count += 1
   end
   #
