@@ -29,10 +29,3 @@ def directors_totals(nds)
   # Be sure to return the result at the end!
   result
 end
-
-pp directors_database
-count = 0
-while count < directors_database.length do
-  count += 1
-end
-puts "There are #{count} directors"
