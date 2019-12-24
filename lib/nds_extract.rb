@@ -19,9 +19,10 @@ def directors_totals(nds)
     # calculate a director's movie total gross
     while movie_count < nds[director_count][:movies].length do
       director_total += nds[director_count][:movies][movie_count][:worldwide_gross]
+      movie_count += 1
     end
     # save it to its own hash in the result
-    result[nds[director_count][:]]
+    result[nds[director_count][:name]] = director_total
     director_count += 1
   end
   #
